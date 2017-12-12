@@ -1,0 +1,24 @@
+
+Neos:
+  Flow:
+    security:
+      authentication:
+        providers:
+          FacebookOAuth2Provider:
+            provider: Flowpack\OAuth2\Client\Facebook\Provider
+            providerOptions:
+              authorizationEndpointUri: 'https://www.facebook.com/dialog/oauth'
+              redirectionEndpointUri: 'https://www.yoursite.com/authentication/authenticate'
+              tokenEndpointUri: 'https://graph.facebook.com/oauth/access_token'
+              tokenEndpointClassName: Flowpack\OAuth2\Client\Facebook\TokenEndpoint
+              clientIdentifier: 123456-your-client-identifier
+              clientSecret: '-add-your-client-secret-here-'
+              responseType: code
+              scopes:
+                - email
+              fields:
+                - email
+                - first_name
+                - last_name
+              partyCreation: true
+              display: popup

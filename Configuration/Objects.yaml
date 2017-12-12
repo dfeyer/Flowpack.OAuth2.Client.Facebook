@@ -1,0 +1,16 @@
+Flowpack\OAuth2\Client\Facebook\ApiClient:
+  properties:
+    requestEngine:
+      object:
+        name: 'Neos\Flow\Http\Client\CurlEngine'
+    appSecret:
+      setting: 'Neos.Flow.security.authentication.providers.FacebookOAuth2Provider.providerOptions.clientSecret'
+
+Flowpack\OAuth2\Client\Facebook\TokenEndpoint:
+  properties:
+    endpointUri:
+      setting: 'Neos.Flow.security.authentication.providers.FacebookOAuth2Provider.providerOptions.tokenEndpointUri'
+    clientIdentifier:
+      setting: 'Neos.Flow.security.authentication.providers.FacebookOAuth2Provider.providerOptions.clientIdentifier'
+    clientSecret:
+      setting: 'Neos.Flow.security.authentication.providers.FacebookOAuth2Provider.providerOptions.clientSecret'
