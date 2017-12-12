@@ -2,6 +2,7 @@
     "description": "Facebook support for OAuth 2.0 authorization framework client for Flow Framework.",
     "type": "neos-package",
     "name": "flowpack/oauth2-client-facebook",
+    "license": "MIT",
     "require": {
         "flowpack/oauth2-client": "^1.0"
     },
